@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "@typoerr/eslint-config",
+    "@typoerr/eslint-config/+typescript"
+  ],
+  "ignorePatterns": [
+    "/public/**",
+    "/dist/**",
+    "**/node_modules/**"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "commonjs": true,
+    "es6": true,
+    "worker": true,
+    "serviceworker": true,
+    "jest": true
+  }
+}

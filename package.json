@@ -1,0 +1,46 @@
+{
+  "name": "@typoerr/boilerplate",
+  "description": "",
+  "version": "0.0.1",
+  "author": "typoerr",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^25.1.4",
+    "@types/node": "^13.9.0",
+    "@typoerr/eslint-config": "^0.0.25",
+    "del": "^5.1.0",
+    "eslint": "^6.8.0",
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "jest": "^25.1.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^25.2.1",
+    "ts-loader": "^6.2.1",
+    "ts-node": "^8.6.2",
+    "tsconfig-paths": "^3.9.0",
+    "tsconfig-paths-webpack-plugin": "^3.2.0",
+    "typescript": "^3.8.3",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-stream": "^5.2.1"
+  },
+  "scripts": {
+    "compile": "run-p compile:*",
+    "clean": "run-p clean:**",
+    "clean:dist": "rimraf dist",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "verbose": true,
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "test/tsconfig.json"
+      }
+    }
+  }
+}
